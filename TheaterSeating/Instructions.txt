@@ -1,0 +1,221 @@
+INSTRUCTIONS
+		1. Input test value format is Theater row size value followed by seating size matrix , orders size followed by list if orders
+		Example : 4 6,6 8,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,2 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,12
+        4  is row size 
+        6,6 8,2,5,4 4,6,6,4 2,8,8,2 6,6   is the Seating Structure
+        8 is the orders size
+        Smith,2 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,12    is the list of orders
+		2. Test input values are saved in TheaterSeatingTestInput.txt file in the project directory 
+    3. Run the Main program "TheaterSeating.java" under "src" directory to test the code
+    4. Output will be printed on console as below
+    
+    ********************** Testing start **********************************
+Running test case for input -- [4 6,6 8,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,2 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,12, 4 6,6 8,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,4 Jones,5 Davis,6 Wilson,4 Jhonson,8 williams,4 Brown,80 Miller,6, 4 6,6 4,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,100 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,14 Brown,6 Miller,12, 4 3,2 8,2,5,4 4,1,6,4 2,1,10,2 6,1 8 Smith,8 Jones,30 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,12, 4 6,1 2,2,5,4 4,6,6,4 2,8, 6,6 8 Smith,100 Jones,5 Davis,6 Wilson,3 Jhonson,3 williams,4 Brown,8 Miller,120, 4 2,6 8,2,5,4 4,6,6,4 8,8,2 6,6 8 Smith,1 Jones,5 Davis,6 Wilson,2 Jhonson,3 williams,4 Brown,12 Miller,12, 4 6,10 10,2,5,4 4,4 2,8,8,2 6,6 8 Smith,6 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,3]
+                  
+---Seating structure---
+6,6
+8,2,5,4
+4,6,6,4
+2,8,8,2
+                  
+---Orders----
+Smith,2
+Jones,5
+Davis,6
+Wilson,100
+Jhonson,3
+williams,4
+Brown,8
+Miller,12
+                  
+----Output----
+Smith Row 2 Section 2
+Jones Row 2 Section 3
+Davis Row 1 Section 1
+Wilson Sorry, we can't handle your party.
+Jhonson Row 1 Section 2
+williams Row 2 Section 4
+Brown Row 2 Section 1
+Miller Call to split party
+********************** Testing Ends **********************************
+                                                                       
+********************** Testing start **********************************
+Running test case for input -- [4 6,6 8,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,2 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,12, 4 6,6 8,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,4 Jones,5 Davis,6 Wilson,4 Jhonson,8 williams,4 Brown,80 Miller,6, 4 6,6 4,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,100 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,14 Brown,6 Miller,12, 4 3,2 8,2,5,4 4,1,6,4 2,1,10,2 6,1 8 Smith,8 Jones,30 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,12, 4 6,1 2,2,5,4 4,6,6,4 2,8, 6,6 8 Smith,100 Jones,5 Davis,6 Wilson,3 Jhonson,3 williams,4 Brown,8 Miller,120, 4 2,6 8,2,5,4 4,6,6,4 8,8,2 6,6 8 Smith,1 Jones,5 Davis,6 Wilson,2 Jhonson,3 williams,4 Brown,12 Miller,12, 4 6,10 10,2,5,4 4,4 2,8,8,2 6,6 8 Smith,6 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,3]
+                  
+---Seating structure---
+6,6
+8,2,5,4
+4,6,6,4
+2,8,8,2
+                  
+---Orders----
+Smith,4
+Jones,5
+Davis,6
+Wilson,4
+Jhonson,8
+williams,4
+Brown,80
+Miller,6
+                  
+----Output----
+Smith Row 2 Section 4
+Jones Row 2 Section 3
+Davis Row 1 Section 1
+Wilson Row 1 Section 2
+Jhonson Row 2 Section 1
+williams Row 3 Section 1
+Brown Sorry, we can't handle your party.
+Miller Row 3 Section 2
+********************** Testing Ends **********************************
+                                                                       
+********************** Testing start **********************************
+Running test case for input -- [4 6,6 8,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,2 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,12, 4 6,6 8,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,4 Jones,5 Davis,6 Wilson,4 Jhonson,8 williams,4 Brown,80 Miller,6, 4 6,6 4,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,100 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,14 Brown,6 Miller,12, 4 3,2 8,2,5,4 4,1,6,4 2,1,10,2 6,1 8 Smith,8 Jones,30 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,12, 4 6,1 2,2,5,4 4,6,6,4 2,8, 6,6 8 Smith,100 Jones,5 Davis,6 Wilson,3 Jhonson,3 williams,4 Brown,8 Miller,120, 4 2,6 8,2,5,4 4,6,6,4 8,8,2 6,6 8 Smith,1 Jones,5 Davis,6 Wilson,2 Jhonson,3 williams,4 Brown,12 Miller,12, 4 6,10 10,2,5,4 4,4 2,8,8,2 6,6 8 Smith,6 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,3]
+                  
+---Seating structure---
+6,6
+4,2,5,4
+4,6,6,4
+2,8,8,2
+                  
+---Orders----
+Smith,100
+Jones,5
+Davis,6
+Wilson,100
+Jhonson,3
+williams,14
+Brown,6
+Miller,12
+                  
+----Output----
+Smith Sorry, we can't handle your party.
+Jones Row 2 Section 3
+Davis Row 1 Section 1
+Wilson Sorry, we can't handle your party.
+Jhonson Row 1 Section 2
+williams Call to split party
+Brown Row 3 Section 2
+Miller Call to split party
+********************** Testing Ends **********************************
+                                                                       
+********************** Testing start **********************************
+Running test case for input -- [4 6,6 8,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,2 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,12, 4 6,6 8,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,4 Jones,5 Davis,6 Wilson,4 Jhonson,8 williams,4 Brown,80 Miller,6, 4 6,6 4,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,100 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,14 Brown,6 Miller,12, 4 3,2 8,2,5,4 4,1,6,4 2,1,10,2 6,1 8 Smith,8 Jones,30 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,12, 4 6,1 2,2,5,4 4,6,6,4 2,8, 6,6 8 Smith,100 Jones,5 Davis,6 Wilson,3 Jhonson,3 williams,4 Brown,8 Miller,120, 4 2,6 8,2,5,4 4,6,6,4 8,8,2 6,6 8 Smith,1 Jones,5 Davis,6 Wilson,2 Jhonson,3 williams,4 Brown,12 Miller,12, 4 6,10 10,2,5,4 4,4 2,8,8,2 6,6 8 Smith,6 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,3]
+                  
+---Seating structure---
+3,2
+8,2,5,4
+4,1,6,4
+2,1,10,2
+                  
+---Orders----
+Smith,8
+Jones,30
+Davis,6
+Wilson,100
+Jhonson,3
+williams,4
+Brown,8
+Miller,12
+                  
+----Output----
+Smith Row 2 Section 1
+Jones Call to split party
+Davis Row 3 Section 3
+Wilson Sorry, we can't handle your party.
+Jhonson Row 1 Section 1
+williams Row 2 Section 4
+Brown Row 4 Section 3
+Miller Call to split party
+********************** Testing Ends **********************************
+                                                                       
+********************** Testing start **********************************
+Running test case for input -- [4 6,6 8,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,2 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,12, 4 6,6 8,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,4 Jones,5 Davis,6 Wilson,4 Jhonson,8 williams,4 Brown,80 Miller,6, 4 6,6 4,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,100 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,14 Brown,6 Miller,12, 4 3,2 8,2,5,4 4,1,6,4 2,1,10,2 6,1 8 Smith,8 Jones,30 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,12, 4 6,1 2,2,5,4 4,6,6,4 2,8, 6,6 8 Smith,100 Jones,5 Davis,6 Wilson,3 Jhonson,3 williams,4 Brown,8 Miller,120, 4 2,6 8,2,5,4 4,6,6,4 8,8,2 6,6 8 Smith,1 Jones,5 Davis,6 Wilson,2 Jhonson,3 williams,4 Brown,12 Miller,12, 4 6,10 10,2,5,4 4,4 2,8,8,2 6,6 8 Smith,6 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,3]
+                  
+---Seating structure---
+6,1
+2,2,5,4
+4,6,6,4
+2,8,
+                  
+---Orders----
+Smith,100
+Jones,5
+Davis,6
+Wilson,3
+Jhonson,3
+williams,4
+Brown,8
+Miller,120
+                  
+----Output----
+Smith Sorry, we can't handle your party.
+Jones Row 2 Section 3
+Davis Row 1 Section 1
+Wilson Row 2 Section 4
+Jhonson Row 3 Section 1
+williams Row 3 Section 2
+Brown Row 4 Section 2
+Miller Sorry, we can't handle your party.
+********************** Testing Ends **********************************
+                                                                       
+********************** Testing start **********************************
+Running test case for input -- [4 6,6 8,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,2 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,12, 4 6,6 8,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,4 Jones,5 Davis,6 Wilson,4 Jhonson,8 williams,4 Brown,80 Miller,6, 4 6,6 4,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,100 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,14 Brown,6 Miller,12, 4 3,2 8,2,5,4 4,1,6,4 2,1,10,2 6,1 8 Smith,8 Jones,30 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,12, 4 6,1 2,2,5,4 4,6,6,4 2,8, 6,6 8 Smith,100 Jones,5 Davis,6 Wilson,3 Jhonson,3 williams,4 Brown,8 Miller,120, 4 2,6 8,2,5,4 4,6,6,4 8,8,2 6,6 8 Smith,1 Jones,5 Davis,6 Wilson,2 Jhonson,3 williams,4 Brown,12 Miller,12, 4 6,10 10,2,5,4 4,4 2,8,8,2 6,6 8 Smith,6 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,3]
+                  
+---Seating structure---
+2,6
+8,2,5,4
+4,6,6,4
+8,8,2
+                  
+---Orders----
+Smith,1
+Jones,5
+Davis,6
+Wilson,2
+Jhonson,3
+williams,4
+Brown,12
+Miller,12
+                  
+----Output----
+Smith Row 1 Section 1
+Jones Row 2 Section 3
+Davis Row 1 Section 2
+Wilson Row 2 Section 2
+Jhonson Row 2 Section 1
+williams Row 2 Section 4
+Brown Call to split party
+Miller Call to split party
+********************** Testing Ends **********************************
+                                                                       
+********************** Testing start **********************************
+Running test case for input -- [4 6,6 8,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,2 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,12, 4 6,6 8,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,4 Jones,5 Davis,6 Wilson,4 Jhonson,8 williams,4 Brown,80 Miller,6, 4 6,6 4,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,100 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,14 Brown,6 Miller,12, 4 3,2 8,2,5,4 4,1,6,4 2,1,10,2 6,1 8 Smith,8 Jones,30 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,12, 4 6,1 2,2,5,4 4,6,6,4 2,8, 6,6 8 Smith,100 Jones,5 Davis,6 Wilson,3 Jhonson,3 williams,4 Brown,8 Miller,120, 4 2,6 8,2,5,4 4,6,6,4 8,8,2 6,6 8 Smith,1 Jones,5 Davis,6 Wilson,2 Jhonson,3 williams,4 Brown,12 Miller,12, 4 6,10 10,2,5,4 4,4 2,8,8,2 6,6 8 Smith,6 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,3]
+                  
+---Seating structure---
+6,10
+10,2,5,4
+4,4
+2,8,8,2
+                  
+---Orders----
+Smith,6
+Jones,5
+Davis,6
+Wilson,100
+Jhonson,3
+williams,4
+Brown,8
+Miller,3
+                  
+----Output----
+Smith Row 1 Section 1
+Jones Row 2 Section 3
+Davis Row 1 Section 2
+Wilson Sorry, we can't handle your party.
+Jhonson Row 1 Section 2
+williams Row 2 Section 4
+Brown Row 2 Section 1
+Miller Row 3 Section 1
+********************** Testing Ends **********************************
+                                                                       
