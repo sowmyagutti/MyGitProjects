@@ -1,13 +1,17 @@
 INSTRUCTIONS
-		1. Input test value format is Theater row size value followed by seating size matrix , orders size followed by list if orders
-		Example : 4 6,6 8,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,2 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,12
+------------
+1. Input test value format is Theater row size value followed by seating size matrix , orders size followed by list of orders
+	Example : 4 6,6 8,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,2 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,12
         4  is row size 
         6,6 8,2,5,4 4,6,6,4 2,8,8,2 6,6   is the Seating Structure
         8 is the orders size
-        Smith,2 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,12    is the list of orders
-		2. Test input values are saved in TheaterSeatingTestInput.txt file in the project directory 
-    3. Run the Main program "TheaterSeating.java" under "src" directory to test the code
-    4. Output will be printed on console as below
+        Smith,2 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,12    are the list of orders
+	
+2. Test input values are saved in TheaterSeatingTestInput.txt file in the project directory 
+
+3. Run the Main program "TheaterSeating.java" under "src" directory to test the code
+
+4. Output will be printed on console as below
     
     ********************** Testing start **********************************
 Running test case for input -- [4 6,6 8,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,2 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,12, 4 6,6 8,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,4 Jones,5 Davis,6 Wilson,4 Jhonson,8 williams,4 Brown,80 Miller,6, 4 6,6 4,2,5,4 4,6,6,4 2,8,8,2 6,6 8 Smith,100 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,14 Brown,6 Miller,12, 4 3,2 8,2,5,4 4,1,6,4 2,1,10,2 6,1 8 Smith,8 Jones,30 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,12, 4 6,1 2,2,5,4 4,6,6,4 2,8, 6,6 8 Smith,100 Jones,5 Davis,6 Wilson,3 Jhonson,3 williams,4 Brown,8 Miller,120, 4 2,6 8,2,5,4 4,6,6,4 8,8,2 6,6 8 Smith,1 Jones,5 Davis,6 Wilson,2 Jhonson,3 williams,4 Brown,12 Miller,12, 4 6,10 10,2,5,4 4,4 2,8,8,2 6,6 8 Smith,6 Jones,5 Davis,6 Wilson,100 Jhonson,3 williams,4 Brown,8 Miller,3]
